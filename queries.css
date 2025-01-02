@@ -1,0 +1,162 @@
+/* Mobile-first approach for screens 768px and smaller */
+@media (max-width: 768px) {
+    /* Navbar adjustments */
+
+    .nav__image {
+        height: 3rem; /* Reduce logo size */
+    }
+
+    .nav__list {
+        flex-direction: column; /* Stack navigation items */
+        gap: 1rem; /* Adjust spacing */
+    }
+
+    .button__login {
+        font-size: 1rem; /* Adjust button font size */
+        padding: 0.5rem 0.75rem; /* Adjust padding */
+    }
+
+    /* Welcome section adjustments */
+    .welcome {
+        font-size: 2.5rem; /* Reduce font size */
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .welcome_paragraph {
+        font-size: 1rem; /* Reduce paragraph font size */
+        padding: 0 1rem; /* Add padding for better readability */
+    }
+
+    .welcome_paragraph.third {
+        margin-bottom: 1.5rem; /* Adjust bottom margin */
+    }
+
+    /* Resources section adjustments */
+    .resources {
+        flex-direction: column; /* Stack resource links */
+        align-items: center; /* Center items */
+        gap: 1.5rem; /* Adjust spacing */
+    }
+
+    .resources__link {
+        width: 100%; /* Full width */
+        max-width: 20rem; /* Limit the width */
+        height: auto; /* Adjust height */
+    }
+
+    /* Footer adjustments */
+    .footer__container {
+        flex-direction: column; /* Stack footer sections */
+        align-items: center; /* Center items */
+        text-align: center; /* Center text */
+    }
+
+    .footer__logo-section,
+    .footer__column {
+        margin-bottom: 1.5rem; /* Add space between sections */
+    }
+
+    .footer__address {
+        font-size: 0.75rem; /* Adjust font size */
+    }
+
+    .footer__list li {
+        font-size: 0.875rem; /* Adjust font size */
+    }
+}
+
+/* Additional media query for very small screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .nav__header {
+        display: none;
+    }
+    .nav__image {
+        height: 2.5rem; /* Further reduce logo size */
+    }
+
+    .welcome {
+        font-size: 2rem; /* Further reduce heading size */
+    }
+
+    .welcome_paragraph {
+        font-size: 0.875rem; /* Smaller paragraph font */
+    }
+
+    .resources__link {
+        max-width: 18rem; /* Reduce resource link width */
+    }
+
+    .footer__list li {
+        font-size: 0.75rem; /* Smaller footer list font */
+    }
+}
+
+/* Mobile Navigation Styles */
+.mobile-nav {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-bottom: 1px solid #e9ecef;
+    font-family: Arial, sans-serif;
+}
+
+.mobile-nav__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-nav__logo img {
+    height: 2.5rem;
+}
+
+.mobile-nav__toggle {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #212529;
+}
+
+.mobile-nav__list {
+    display: none;
+    flex-direction: column;
+    margin-top: 1rem;
+    padding: 0;
+    list-style: none;
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 0.375rem;
+}
+
+.mobile-nav__list li {
+    border-bottom: 1px solid #e9ecef;
+}
+
+.mobile-nav__list li:last-child {
+    border-bottom: none;
+}
+
+.mobile-nav__list a {
+    display: block;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.mobile-nav__list a:hover {
+    background-color: #e9ecef;
+    color: #0056b3;
+}
+
+/* Show the menu when toggled */
+.mobile-nav__list.active {
+    display: flex;
+}
+
+/* Media Query for Mobile Navigation */
+@media (max-width: 760px) {
+    .mobile-nav {
+        display: block;
+    }
+}

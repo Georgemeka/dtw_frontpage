@@ -173,6 +173,10 @@ li a:hover {
     text-decoration: none;
 }
 
+.mobile-nav {
+    display: none;
+}
+
 .nav__image {
     height: 4rem;
 }

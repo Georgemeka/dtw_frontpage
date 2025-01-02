@@ -5,6 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>DTW Website</title>
         <link rel="stylesheet" href="styles.css" />
+
+        <link rel="stylesheet" href="queries.css" />
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,6 +33,28 @@
                 <li class="button__login">
                     <a href="/login">Login</a>
                 </li>
+            </ul>
+        </nav>
+
+        <!-- Mobile Navigation Bar -->
+        <nav class="mobile-nav">
+            <div class="mobile-nav__header">
+                <a href="/" class="mobile-nav__logo">
+                    <img src="./src/dtwLogo.jpg" alt="DTW Logo" />
+                </a>
+                <button
+                    class="mobile-nav__toggle"
+                    aria-label="Toggle navigation"
+                >
+                    &#9776;
+                    <!-- Unicode for hamburger menu -->
+                </button>
+            </div>
+            <ul class="mobile-nav__list">
+                <li><a href="/product">Home</a></li>
+                <li><a href="/pricing">DTW Scratch Cards</a></li>
+                <li><a href="/edu-store">DTW Edu Store</a></li>
+                <li><a href="/login">Login</a></li>
             </ul>
         </nav>
 
